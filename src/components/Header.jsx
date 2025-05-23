@@ -14,11 +14,11 @@ export default function Header() {
                             <Link to="/" className="hover:underline">Главная</Link>
                         </li>
                         <li>
-                            <Link to="/cart" className="hover:underline">Корзина</Link>
+                            <Link to="/cart" className="hover:underline">Корзина:  {cartItems.reduce((sum, item) => sum + item.quantity, 0)} товаров</Link>
                         </li>
                     </ul>
                 </nav>
-                 <div>В корзине: {cartItems.reduce((sum, item) => sum + item.quantity, 0)} товаров</div>
+                 
             </div>
         </header>
     );
