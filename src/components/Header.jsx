@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Header() {
+    const cartItems = useSelector(state => state.cart.items);
     return (
         <header className="h-16 bgblue-500 text-black shadow flex items-center">
             <div className="container mx-auto flex justify-between  items-center py-4 px-4">
@@ -16,6 +18,7 @@ export default function Header() {
                         </li>
                     </ul>
                 </nav>
+                 <div>В корзине: {cartItems.reduce((sum, item) => sum + item.quantity, 0)} товаров</div>
             </div>
         </header>
     );
