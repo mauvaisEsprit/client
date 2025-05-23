@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="h-16 bgblue-500 text-black shadow flex items-center">
             <div className="container mx-auto flex justify-between  items-center py-4 px-4">
-                <Link to="/" className="text-xl font-bold">My Store</Link>
+                <Link to="/" className="text-xl font-bold">Магазин по воскресеньям</Link>
                 <nav>
                     <ul className="flex gap-4">
                         <li>
