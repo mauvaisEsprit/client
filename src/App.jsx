@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import Products from "./pages/Product";
+import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 
 export default function App() {
